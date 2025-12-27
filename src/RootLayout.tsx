@@ -1,16 +1,20 @@
-import {useParams, Outlet, Link} from 'react-router-dom';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useParams, Outlet, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const RootLayout = () => {
-    const { lang } = useParams();
+type RouteParams = {
+    lang: string;
+};
+
+const RootLayout: React.FC = () => {
+    const { lang } = useParams<RouteParams>();
     const { i18n } = useTranslation();
 
     useEffect(() => {
-        // List of supported languages
-        const supportedLangs = ['en', 'es', 'fr'];
+        const supportedLangs = ['en', 'lv', 'ru'];
 
-        if (supportedLangs.includes(lang)) {
+        if (lang && supportedLangs.includes(lang)) {
             i18n.changeLanguage(lang);
         }
     }, [lang, i18n]);
@@ -18,12 +22,10 @@ const RootLayout = () => {
     return (
         <div>
             <nav>
-                {/* Links must now include the current language prefix */}
-                <Link to={`/${lang}`}>Home</Link> |
+                <Link style={{ marginRight: '10px' }} to={`/${lang}`}>Home</Link>
                 <Link to={`/${lang}/about`}>About</Link>
             </nav>
-
-            {/* Outlet renders the child routes (Home/About) */}
+            <LanguageSwitcher />
             <main>
                 <Outlet />
             </main>
