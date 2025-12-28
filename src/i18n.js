@@ -9,25 +9,32 @@ i18n
         resources: {
             en: {
                 translation: {
-                    welcome: "Welcome to our app",
-                    description: "This is a multi-language site."
+                    specialist_title: "Meet our Specialist",
+                    name: "Elīna Some",
+                    role: "Certified Specialist",
+                    description: "Providing professional and personalized care with a focus on individual health goals and modern practices.",
+                    contact_me: "Get in touch"
                 }
             },
             lv: {
                 translation: {
-                    welcome: "Labdien",
-                    description: "Paldies"
+                    specialist_title: "Iepazīstieties ar mūsu speciālistu",
+                    name: "Elīna Some",
+                    role: "Sertificēta speciāliste",
+                    description: "Nodrošina profesionālu un personalizētu aprūpi, koncentrējoties uz individuāliem veselības mērķiem un mūsdienīgu praksi.",
+                    contact_me: "Sazināties"
                 }
             },
             ru: {
                 translation: {
-                    welcome: "Добрый день",
-                    description: "Спасибо"
+                    specialist_title: "Познакомьтесь с нашим специалистом",
+                    name: "Elīna Some",
+                    role: "Сертифицированный специалист",
+                    description: "Профессиональный и персонализированный подход к каждому клиенту, уделяя внимание индивидуальным целям здоровья.",
+                    contact_me: "Связаться со мной"
                 }
             }
         },
         fallbackLng: "en",
         interpolation: { escapeValue: false }
     });
-
-export default i18n;
