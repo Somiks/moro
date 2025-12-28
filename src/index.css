@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand: #8fb24a;
+    --color-brand-dark: #7a9a3e; /* A slightly darker shade for hover effects */
+    --color-brand-light: #f4f7ed; /* A very light version for backgrounds */
+}

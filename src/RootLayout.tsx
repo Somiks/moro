@@ -37,8 +37,8 @@ const RootLayout: React.FC = () => {
                         {/* Right: Desktop Nav & Lang */}
                         <div className="hidden md:flex items-center space-x-8">
                             <nav className="flex space-x-6 text-sm font-medium">
-                                <Link to={`/${lang}`} className="hover:text-blue-600 transition">Home</Link>
-                                <Link to={`/${lang}/about`} className="hover:text-blue-600 transition">About</Link>
+                                <Link to={`/${lang}`} className="hover:text-brand transition">Home</Link>
+                                <Link to={`/${lang}/about`} className="hover:text-brand transition">About</Link>
                             </nav>
                             <div className="h-6 w-px bg-gray-300 mx-2"></div>
                             <LanguageSwitcher />
@@ -48,7 +48,7 @@ const RootLayout: React.FC = () => {
                         <div className="md:hidden flex items-center">
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                className="text-gray-600 hover:text-blue-600 focus:outline-none"
+                                className="text-gray-600 hover:text-brand focus:outline-none"
                             >
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     {isMenuOpen ? (
