@@ -9,102 +9,52 @@ i18n
         resources: {
             en: {
                 translation: {
-                    specialist_title: "Meet our Specialist",
-                    name: "Elīna Some",
+                    home_welcome: "Wellness & Balance",
+                    home_slogan: "Professional Care by Elīna Some",
+                    contact_me: "Book an Appointment",
                     role: "Certified Specialist",
-                    description: "Providing professional and personalized care with a focus on individual health goals and modern practices.",
-                    home_welcome: "Welcome",
-                    home_slogan: "Your well-being is our priority.",
-                    our_services: "Our Services",
+                    name: "Elīna Some",
+                    description: "Providing professional and personalized care with a focus on individual health goals.",
                     services: [
-                        {
-                            name: "Back Massage (60 min)",
-                            description: "Relaxing and therapeutic massage for back and neck muscles.",
-                            price: "60 EUR"
-                        },
-                        {
-                            name: "Full Body Massage (90 min)",
-                            description: "Comprehensive relaxation for your entire body.",
-                            price: "90 EUR"
-                        },
-                        {
-                            name: "Sports Massage (45 min)",
-                            description: "Targeted deep tissue work for muscle recovery and performance.",
-                            price: "55 EUR"
-                        },
-                        {
-                            name: "Aromatherapy Session (60 min)",
-                            description: "Custom essential oil blend for stress relief and mood enhancement.",
-                            price: "70 EUR"
-                        }
+                        { name: "Back Massage", duration: "30 min", price: "30 EUR" },
+                        { name: "Full Body Massage", duration: "60 min", price: "55 EUR" },
+                        { name: "Deep Tissue Massage", duration: "90 min", price: "75 EUR" },
+                        { name: "Neck & Shoulder Massage", duration: "20 min", price: "20 EUR" },
+                        { name: "Hot Stone Therapy", duration: "60 min", price: "65 EUR" }
                     ]
                 }
             },
             lv: {
                 translation: {
-                    specialist_title: "Iepazīstieties ar mūsu speciālistu",
-                    name: "Elīna Some",
+                    home_welcome: "Labsajūta un Līdzsvars",
+                    home_slogan: "Profesionāla aprūpe – Elīna Some",
+                    contact_me: "Pieteikt vizīti",
                     role: "Sertificēta speciāliste",
-                    description: "Nodrošina profesionālu un personalizētu aprūpi, koncentrējoties uz individuāliem veselības mērķiem un mūsdienīgu praksi.",
-                    contact_me: "Sazināties",
-                    home_welcome: "Laipni lūgti",
-                    home_slogan: "Jūsu labklājība ir mūsu prioritāte.",
-                    our_services: "Mūsu pakalpojumi",
+                    name: "Elīna Some",
+                    description: "Nodrošina profesionālu un personalizētu aprūpi, koncentrējoties uz individuāliem mērķiem.",
                     services: [
-                        {
-                            name: "Muguras masāža (60 min)",
-                            description: "Relaksējoša un terapeitiska masāža muguras un kakla muskuļiem.",
-                            price: "60 EUR"
-                        },
-                        {
-                            name: "Pilnas ķermeņa masāža (90 min)",
-                            description: "Visaptveroša relaksācija visam jūsu ķermenim.",
-                            price: "90 EUR"
-                        },
-                        {
-                            name: "Sporta masāža (45 min)",
-                            description: "Mērķtiecīgs dziļo audu darbs muskuļu atjaunošanai un veiktspējai.",
-                            price: "55 EUR"
-                        },
-                        {
-                            name: "Aromterapijas sesija (60 min)",
-                            description: "Pielāgots ēterisko eļļu maisījums stresa mazināšanai un garastāvokļa uzlabošanai.",
-                            price: "70 EUR"
-                        }
+                        { name: "Muguras masāža", duration: "30 min", price: "30 EUR" },
+                        { name: "Pilna ķermeņa masāža", duration: "60 min", price: "55 EUR" },
+                        { name: "Dziļo audu masāža", duration: "90 min", price: "75 EUR" },
+                        { name: "Apkakles zonas masāža", duration: "20 min", price: "20 EUR" },
+                        { name: "Karsto akmeņu terapija", duration: "60 min", price: "65 EUR" }
                     ]
                 }
             },
             ru: {
                 translation: {
-                    specialist_title: "Познакомьтесь с нашим специалистом",
-                    name: "Elīna Some",
+                    home_welcome: "Здоровье и Баланс",
+                    home_slogan: "Профессиональный уход от Элины Соме",
+                    contact_me: "Записаться на прием",
                     role: "Сертифицированный специалист",
-                    description: "Профессиональный и персонализированный подход к каждому клиенту, уделяя внимание индивидуальным целям здоровья.",
-                    contact_me: "Связаться со мной",
-                    home_welcome: "Добро пожаловать",
-                    home_slogan: "Ваше благополучие — наш приоритет.",
-                    our_services: "Наши услуги",
+                    name: "Элина Соме",
+                    description: "Профессиональный и персонализированный подход к каждому клиенту.",
                     services: [
-                        {
-                            name: "Массаж спины (60 мин)",
-                            description: "Расслабляющий и терапевтический массаж мышц спины и шеи.",
-                            price: "60 EUR"
-                        },
-                        {
-                            name: "Массаж всего тела (90 мин)",
-                            description: "Комплексное расслабление для всего тела.",
-                            price: "90 EUR"
-                        },
-                        {
-                            name: "Спортивный массаж (45 мин)",
-                            description: "Целенаправленная глубокая проработка тканей для восстановления мышц и повышения производительности.",
-                            price: "55 EUR"
-                        },
-                        {
-                            name: "Сеанс ароматерапии (60 мин)",
-                            description: "Индивидуальная смесь эфирных масел для снятия стресса и улучшения настроения.",
-                            price: "70 EUR"
-                        }
+                        { name: "Массаж спины", duration: "30 мин", price: "30 EUR" },
+                        { name: "Массаж всего тела", duration: "60 мин", price: "55 EUR" },
+                        { name: "Глубокий массаж тканей", duration: "90 мин", price: "75 EUR" },
+                        { name: "Массаж воротниковой зоны", duration: "20 мин", price: "20 EUR" },
+                        { name: "Терапия горячими камнями", duration: "60 мин", price: "65 EUR" }
                     ]
                 }
             }
