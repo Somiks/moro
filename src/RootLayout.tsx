@@ -11,6 +11,7 @@ const RootLayout: React.FC = () => {
     useEffect(() => {
         if (lang) {
             i18n.changeLanguage(lang);
+            document.documentElement.lang = lang;
         }
     }, [lang, i18n]);
     

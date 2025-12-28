@@ -2,6 +2,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Link, useParams} from 'react-router-dom';
 import heroImage from '../assets/hero-home.png';
+import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
     const {t} = useTranslation();
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO titleKey="seo_home_title" descriptionKey="seo_home_description" />
             {/* Hero Section */}
             <section className="relative h-[35vh] flex items-center justify-center text-white overflow-hidden">
                 <img src={heroImage} alt="Hero" className="absolute inset-0 w-full h-full object-cover"/>
