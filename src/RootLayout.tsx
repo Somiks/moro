@@ -21,7 +21,7 @@ const RootLayout: React.FC = () => {
         <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
             {/* Navigation Bar */}
             <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-24">
 
                         {/* Left: Logo */}
@@ -78,7 +78,7 @@ const RootLayout: React.FC = () => {
             </header>
 
             {/* Main Content Area */}
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <main className="max-w-4xl mx-auto md:px-6 py-10">
                 <Outlet />
             </main>
         </div>

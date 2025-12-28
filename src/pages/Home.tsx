@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section className="w-full py-10 md:px-6 max-w-4xl mx-auto">
+            <section className="w-full py-10 px-6">
                 <div className="w-full space-y-12">
                     {Object.entries(servicesData).map(([key, categoryServices]) => (
                         <div key={key}>

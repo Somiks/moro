@@ -7,7 +7,7 @@ const About: React.FC = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="max-w-5xl mx-auto my-10 px-4">
+        <section className="w-full my-10">
             <SEO titleKey="seo_about_title" descriptionKey="seo_about_description" />
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-stretch border border-gray-100">
 
