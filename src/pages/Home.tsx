@@ -32,18 +32,18 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section className="w-full py-10 px-6">
+            <section className="w-full py-10">
                 <div className="w-full space-y-12">
                     {Object.entries(servicesData).map(([key, categoryServices]) => (
                         <div key={key}>
                             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand pl-4 uppercase tracking-wider">
                                 {categories[key] || key}
                             </h2>
-                            <div className="divide-y divide-gray-100">
+                            <div>
                                 {categoryServices.map((service, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center justify-between py-4 hover:bg-gray-50/50 transition-colors group"
+                                        className={`flex items-center justify-between py-2 px-4 transition-colors group ${index % 2 !== 0 ? 'bg-brand-light' : ''}`}
                                     >
                                         {/* Left: Service Name */}
                                         <div className="flex-1">
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
 
                                         {/* Right: Price */}
                                         <div className="flex items-center text-right ml-4">
-                                            <span className="text-lg md:text-xl font-bold text-brand min-w-20">
+                                            <span className="text-lg md:text-lg font-medium text-gray-700 min-w-20">
                                                 {service.price}
                                             </span>
                                         </div>
