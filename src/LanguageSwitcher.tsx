@@ -1,42 +1,45 @@
 import React from 'react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const { lang } = useParams<{ lang: string }>();
-    const { i18n } = useTranslation();
 
-    const changeLanguage = (newLang: string) => {
-        i18n.changeLanguage(newLang);
+    const languages = [
+        { code: 'lv', label: 'LV' },
+        { code: 'en', label: 'EN' },
+        { code: 'ru', label: 'RU' }
+    ];
 
-        const currentPath = location.pathname;
-        const newPath = currentPath.replace(`/${lang}`, `/${newLang}`);
+    const handleLangChange = (newLang: string) => {
+        // Get the current path segments (e.g., ["", "en", "about"])
+        const pathSegments = location.pathname.split('/');
+
+        // Replace the language segment (index 1) with the new language
+        pathSegments[1] = newLang;
+
+        // Join them back together
+        const newPath = pathSegments.join('/');
 
         navigate(newPath);
     };
 
     return (
-        <div className="language-switcher">
-            <button
-                disabled={lang === 'en'}
-                onClick={() => changeLanguage('en')}
-            >
-                English
-            </button>
-            <button
-                disabled={lang === 'lv'}
-                onClick={() => changeLanguage('lv')}
-            >
-                Latviešu
-            </button>
-            <button
-                disabled={lang === 'ru'}
-                onClick={() => changeLanguage('ru')}
-            >
-                Русский
-            </button>
+        <div className="flex gap-2">
+            {languages.map((l) => (
+                <button
+                    key={l.code}
+                    onClick={() => handleLangChange(l.code)}
+                    className={`px-2 py-1 text-xs font-bold rounded border transition-all
+            ${lang === l.code
+                        ? 'bg-blue-600 text-white border-blue-600'
+                        : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                    }`}
+                >
+                    {l.label}
+                </button>
+            ))}
         </div>
     );
 };

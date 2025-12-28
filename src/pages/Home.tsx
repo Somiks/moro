@@ -6,7 +6,6 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            {/* 'welcome' is the key defined in your i18n.ts file */}
             <h1>{t('welcome')}</h1>
             <p>This is the home page content.</p>
         </div>
