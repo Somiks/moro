@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @theme {
     --color-brand: #8fb24a;
     --color-brand-dark: #7a9a3e; /* A slightly darker shade for hover effects */

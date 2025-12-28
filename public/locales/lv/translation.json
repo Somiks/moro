@@ -1,0 +1,19 @@
+{
+  "home_welcome": "Labsajūta un Līdzsvars",
+  "home_slogan": "Profesionāla aprūpe – Elīna Some",
+  "contact_me": "Pieteikt vizīti",
+  "role": "Sertificēta speciāliste",
+  "name": "Elīna Some",
+  "description": "Nodrošina profesionālu un personalizētu aprūpi, koncentrējoties uz individuāliem mērķiem.",
+  "seo_home_title": "Moro | Labsajūta un Līdzsvars - Profesionālas masāžas | Elīna Some",
+  "seo_home_description": "Profesionālas masāžas pie Elīnas Somes. Labsajūta un līdzsvars caur personalizētu aprūpi. Muguras masāža, pilna ķermeņa masāža un karsto akmeņu terapija.",
+  "seo_about_title": "Par Elīnu Somi | Sertificēta masāžas speciāliste",
+  "seo_about_description": "Uzziniet vairāk par Elīnu Somi, sertificētu masāžas speciālisti, kura nodrošina profesionālu un personalizētu aprūpi jūsu veselībai.",
+  "services": [
+    { "name": "Muguras masāža", "duration": "30 min", "price": "30 EUR" },
+    { "name": "Pilna ķermeņa masāža", "duration": "60 min", "price": "55 EUR" },
+    { "name": "Dziļo audu masāža", "duration": "90 min", "price": "75 EUR" },
+    { "name": "Apkakles zonas masāža", "duration": "20 min", "price": "20 EUR" },
+    { "name": "Karsto akmeņu terapija", "duration": "60 min", "price": "65 EUR" }
+  ]
+}

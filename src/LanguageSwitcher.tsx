@@ -31,6 +31,7 @@ const LanguageSwitcher: React.FC = () => {
                 <button
                     key={l.code}
                     onClick={() => handleLangChange(l.code)}
+                    aria-label={`Change language to ${l.label}`}
                     className={`px-2 py-1 text-xs font-bold rounded border transition-all
             ${lang === l.code
                         ? 'bg-brand text-white border-brand'

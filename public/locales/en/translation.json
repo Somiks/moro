@@ -1,0 +1,19 @@
+{
+  "home_welcome": "Wellness & Balance",
+  "home_slogan": "Professional Care by Elīna Some",
+  "contact_me": "Book an Appointment",
+  "role": "Certified Specialist",
+  "name": "Elīna Some",
+  "description": "Providing professional and personalized care with a focus on individual health goals.",
+  "seo_home_title": "Moro | Wellness & Balance - Professional Massage Therapy by Elīna Some",
+  "seo_home_description": "Professional massage therapy services by Elīna Some. Wellness and balance through personalized care. Back massage, full body massage, and hot stone therapy.",
+  "seo_about_title": "About Elīna Some | Certified Massage Specialist",
+  "seo_about_description": "Learn more about Elīna Some, a certified massage specialist providing professional and personalized care focused on your health goals.",
+  "services": [
+    { "name": "Back Massage", "duration": "30 min", "price": "30 EUR" },
+    { "name": "Full Body Massage", "duration": "60 min", "price": "55 EUR" },
+    { "name": "Deep Tissue Massage", "duration": "90 min", "price": "75 EUR" },
+    { "name": "Neck & Shoulder Massage", "duration": "20 min", "price": "20 EUR" },
+    { "name": "Hot Stone Therapy", "duration": "60 min", "price": "65 EUR" }
+  ]
+}

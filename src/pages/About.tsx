@@ -17,7 +17,8 @@ const About: React.FC = () => {
                         <img
                             className="h-72 w-72 object-cover rounded-2xl shadow-2xl ring-8 ring-white"
                             src={authorImg}
-                            alt="Elīna Some"
+                            alt="Elīna Some - Certified Massage Specialist"
+                            loading="lazy"
                         />
                         {/* Decorative element */}
                         <div className="absolute -bottom-4 -right-4 bg-brand text-white p-4 rounded-xl shadow-lg">

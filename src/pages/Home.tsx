@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     const {t} = useTranslation();
     const {lang} = useParams<{ lang: string }>();
 
-    const services = t('services', {returnObjects: true}) as {
+    const services = (t('services', { returnObjects: true }) || []) as {
         name: string;
         price: string;
         duration: string;
@@ -19,7 +19,11 @@ const Home: React.FC = () => {
             <SEO titleKey="seo_home_title" descriptionKey="seo_home_description" />
             {/* Hero Section */}
             <section className="relative h-[35vh] flex items-center justify-center text-white overflow-hidden">
-                <img src={heroImage} alt="Hero" className="absolute inset-0 w-full h-full object-cover"/>
+                <img 
+                    src={heroImage} 
+                    alt="Relaxing massage therapy session at Moro" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-[0.3em] mb-2">
