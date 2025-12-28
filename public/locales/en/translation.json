@@ -9,11 +9,47 @@
   "seo_home_description": "Professional massage therapy services by Elīna Some. Wellness and balance through personalized care. Back massage, full body massage, and hot stone therapy.",
   "seo_about_title": "About Elīna Some | Certified Massage Specialist",
   "seo_about_description": "Learn more about Elīna Some, a certified massage specialist providing professional and personalized care focused on your health goals.",
-  "services": [
-    { "name": "Back Massage", "duration": "30 min", "price": "30 EUR" },
-    { "name": "Full Body Massage", "duration": "60 min", "price": "55 EUR" },
-    { "name": "Deep Tissue Massage", "duration": "90 min", "price": "75 EUR" },
-    { "name": "Neck & Shoulder Massage", "duration": "20 min", "price": "20 EUR" },
-    { "name": "Hot Stone Therapy", "duration": "60 min", "price": "65 EUR" }
-  ]
+  "services": {
+    "arstnieciska_masaza": [
+      { "name": "Back Massage", "price": "28€" },
+      { "name": "Cervical Zone", "price": "23€" },
+      { "name": "Lumbosacral Zone", "price": "23€" },
+      { "name": "Thoracic Back Area", "price": "25€" },
+      { "name": "Chest Massage", "price": "28€" },
+      { "name": "Single Leg Massage", "price": "20€" },
+      { "name": "Leg and Hip Massage", "price": "25€" },
+      { "name": "Single Arm Massage", "price": "23€" },
+      { "name": "Hand and Forearm Massage", "price": "20€" },
+      { "name": "Foot and Lower Leg Massage", "price": "25€" },
+      { "name": "Classical Facial Massage", "price": "28€" },
+      { "name": "Head Massage", "price": "15€" },
+      { "name": "Full Body Massage 60 min.", "price": "60€" },
+      { "name": "Aromatherapy Massage 60 min.", "price": "65€" },
+      { "name": "Hot Stone Massage", "price": "65€" },
+      { "name": "Manual Lymphatic Drainage", "price": "55€" },
+      { "name": "Kinesiological Taping", "price": "10–30€" }
+    ],
+    "masaza_grutniecem": [
+      { "name": "Pregnancy Massage 45 min.", "price": "40€" },
+      { "name": "Pregnancy Massage 60 min.", "price": "50€" },
+      { "name": "Kinesiological Taping", "price": "10–30€" },
+      { "name": "Cross Tape", "price": "1€" }
+    ],
+    "masaza_berniem_un_pusaudziem": [
+      { "name": "Child 1–3 years", "price": "20€" },
+      { "name": "Child 4–7 years", "price": "23€" },
+      { "name": "Child 8–12 years", "price": "25€" },
+      { "name": "Child 12–18 years", "price": "28€" }
+    ],
+    "masaza_zidainiem_no_2_men": [
+      { "name": "General Infant Massage", "price": "20€" },
+      { "name": "Infant Massage at Client's Home", "price": "by agreement" }
+    ]
+  },
+  "service_categories": {
+    "arstnieciska_masaza": "Therapeutic Massage",
+    "masaza_grutniecem": "Pregnancy Massage",
+    "masaza_berniem_un_pusaudziem": "Massage for Children and Adolescents",
+    "masaza_zidainiem_no_2_men": "Infant Massage (from 2 months)"
+  }
 }

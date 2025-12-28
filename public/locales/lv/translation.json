@@ -9,11 +9,47 @@
   "seo_home_description": "Profesionālas masāžas pie Elīnas Somes. Labsajūta un līdzsvars caur personalizētu aprūpi. Muguras masāža, pilna ķermeņa masāža un karsto akmeņu terapija.",
   "seo_about_title": "Par Elīnu Somi | Sertificēta masāžas speciāliste",
   "seo_about_description": "Uzziniet vairāk par Elīnu Somi, sertificētu masāžas speciālisti, kura nodrošina profesionālu un personalizētu aprūpi jūsu veselībai.",
-  "services": [
-    { "name": "Muguras masāža", "duration": "30 min", "price": "30 EUR" },
-    { "name": "Pilna ķermeņa masāža", "duration": "60 min", "price": "55 EUR" },
-    { "name": "Dziļo audu masāža", "duration": "90 min", "price": "75 EUR" },
-    { "name": "Apkakles zonas masāža", "duration": "20 min", "price": "20 EUR" },
-    { "name": "Karsto akmeņu terapija", "duration": "60 min", "price": "65 EUR" }
-  ]
+  "services": {
+    "arstnieciska_masaza": [
+      { "name": "Muguras masāža", "price": "28€" },
+      { "name": "Apkakles zona", "price": "23€" },
+      { "name": "Jostas–krustu zona", "price": "23€" },
+      { "name": "Muguras krūšu daļa", "price": "25€" },
+      { "name": "Krūšu kurvja masāža", "price": "28€" },
+      { "name": "Vienas kājas masāža", "price": "20€" },
+      { "name": "Kājas un gūžas masāža", "price": "25€" },
+      { "name": "Vienas rokas masāža", "price": "23€" },
+      { "name": "Plaukstas un apakšdelma masāža", "price": "20€" },
+      { "name": "Pēdas un apakšstilba masāža", "price": "25€" },
+      { "name": "Klasiskā sejas masāža", "price": "28€" },
+      { "name": "Galvas masāža", "price": "15€" },
+      { "name": "Visa ķermeņa masāža 60 min.", "price": "60€" },
+      { "name": "Aromterapijas masāža 60 min.", "price": "65€" },
+      { "name": "Karsto akmeņu masāža", "price": "65€" },
+      { "name": "Manuālā limfodrenāžas masāža", "price": "55€" },
+      { "name": "Kinezioloģiskā teipošana", "price": "10–30€" }
+    ],
+    "masaza_grutniecem": [
+      { "name": "Masāža grūtniecēm 45 min.", "price": "40€" },
+      { "name": "Masāža grūtniecēm 60 min.", "price": "50€" },
+      { "name": "Kinezioloģiskā teipošana", "price": "10–30€" },
+      { "name": "Cross teips", "price": "1€" }
+    ],
+    "masaza_berniem_un_pusaudziem": [
+      { "name": "Bērns 1–3 gadi", "price": "20€" },
+      { "name": "Bērns 4–7 gadi", "price": "23€" },
+      { "name": "Bērns 8–12 gadi", "price": "25€" },
+      { "name": "Bērns 12–18 gadi", "price": "28€" }
+    ],
+    "masaza_zidainiem_no_2_men": [
+      { "name": "Vispārējā zīdaiņu masāža", "price": "20€" },
+      { "name": "Zīdaiņa masāža pie klienta mājās", "price": "pēc vienošanās" }
+    ]
+  },
+  "service_categories": {
+    "arstnieciska_masaza": "Ārstnieciskā masāža",
+    "masaza_grutniecem": "Masāža grūtniecēm",
+    "masaza_berniem_un_pusaudziem": "Masāža bērniem un pusaudžiem",
+    "masaza_zidainiem_no_2_men": "Masāža zīdaiņiem no 2 mēn."
+  }
 }

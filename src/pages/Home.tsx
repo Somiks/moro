@@ -8,11 +8,8 @@ const Home: React.FC = () => {
     const {t} = useTranslation();
     const {lang} = useParams<{ lang: string }>();
 
-    const services = (t('services', { returnObjects: true }) || []) as {
-        name: string;
-        price: string;
-        duration: string;
-    }[];
+    const servicesData = t('services', { returnObjects: true }) as Record<string, { name: string; price: string }[]>;
+    const categories = t('service_categories', { returnObjects: true }) as Record<string, string>;
 
     return (
         <div className="min-h-screen bg-white">
@@ -35,29 +32,34 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section className="w-full py-10 md:px-6">
-                <div className="w-full">
-                    {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center justify-between py-4 border-b border-gray-100 hover:bg-gray-50/50 transition-colors group"
-                        >
-                            {/* Left: Service Name (Smaller Font) */}
-                            <div className="flex-1">
-                <span
-                    className="text-base md:text-lg font-medium text-gray-700 transition-colors">
-                  {service.name}
-                </span>
-                            </div>
+            <section className="w-full py-10 md:px-6 max-w-4xl mx-auto">
+                <div className="w-full space-y-12">
+                    {Object.entries(servicesData).map(([key, categoryServices]) => (
+                        <div key={key}>
+                            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand pl-4 uppercase tracking-wider">
+                                {categories[key] || key}
+                            </h2>
+                            <div className="divide-y divide-gray-100">
+                                {categoryServices.map((service, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center justify-between py-4 hover:bg-gray-50/50 transition-colors group"
+                                    >
+                                        {/* Left: Service Name */}
+                                        <div className="flex-1">
+                                            <span className="text-base md:text-lg font-medium text-gray-700">
+                                                {service.name}
+                                            </span>
+                                        </div>
 
-                            {/* Right: Duration & Price */}
-                            <div className="flex items-center gap-8 text-right">
-                <span className="text-xs font-semibold text-gray-400 uppercase tracking-tighter tabular-nums">
-                  {service.duration}
-                </span>
-                                <span className="text-lg md:text-xl font-bold text-brand w-20">
-                  {service.price}
-                </span>
+                                        {/* Right: Price */}
+                                        <div className="flex items-center text-right ml-4">
+                                            <span className="text-lg md:text-xl font-bold text-brand min-w-20">
+                                                {service.price}
+                                            </span>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     ))}
