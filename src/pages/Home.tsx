@@ -1,7 +1,7 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Link, useParams} from 'react-router-dom';
-import heroImage from '../assets/hero-home.png';
+import welcome from '../assets/welcome.jpg';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
             {/* Hero Section */}
             <section className="relative h-[35vh] flex items-center justify-center text-white overflow-hidden">
                 <img 
-                    src={heroImage} 
+                    src={welcome} 
                     alt="Relaxing massage therapy session at Moro" 
                     className="absolute inset-0 w-full h-full object-cover"
                 />

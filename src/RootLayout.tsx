@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { useParams, Outlet, Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
-import logoUrl from './assets/logo.svg';
+import logoUrl from './assets/logo.png';
 import {useTranslation} from "react-i18next";
+import {t} from "i18next";
 
 const RootLayout: React.FC = () => {
     const { lang } = useParams<{ lang: string }>();
@@ -22,14 +23,14 @@ const RootLayout: React.FC = () => {
             {/* Navigation Bar */}
             <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-24">
+                    <div className="flex justify-between items-center md:h-20 h-16">
 
                         {/* Left: Logo */}
                         <div className="shrink-0 flex items-center">
                             <Link to={`/${lang}`} className="flex items-center gap-3">
                                 <img
                                     src={logoUrl}
-                                    className="h-25 w-auto"
+                                    className="w-auto md:h-20 h-16 transition-all"
                                     alt="Moro logo"
                                 />
                             </Link>
@@ -38,8 +39,8 @@ const RootLayout: React.FC = () => {
                         {/* Right: Desktop Nav & Lang */}
                         <div className="hidden md:flex items-center space-x-8">
                             <nav className="flex space-x-6 text-sm font-medium">
-                                <Link to={`/${lang}`} className="hover:text-brand transition">Home</Link>
-                                <Link to={`/${lang}/about`} className="hover:text-brand transition">About</Link>
+                                <Link to={`/${lang}`} className="hover:text-brand transition">{t('nav_home')}</Link>
+                                <Link to={`/${lang}/about`} className="hover:text-brand transition">{t('nav_about')}</Link>
                             </nav>
                             <div className="h-6 w-px bg-gray-300 mx-2"></div>
                             <LanguageSwitcher />
@@ -67,8 +68,8 @@ const RootLayout: React.FC = () => {
                 {isMenuOpen && (
                     <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-4">
                         <nav className="flex flex-col space-y-4 text-base font-medium">
-                            <Link onClick={() => setIsMenuOpen(false)} to={`/${lang}`}>Home</Link>
-                            <Link onClick={() => setIsMenuOpen(false)} to={`/${lang}/about`}>About</Link>
+                            <Link onClick={() => setIsMenuOpen(false)} to={`/${lang}`}>{t('nav_home')}</Link>
+                            <Link onClick={() => setIsMenuOpen(false)} to={`/${lang}/about`}>{t('nav_about')}</Link>
                         </nav>
                         <div className="pt-4 border-t border-gray-100">
                             <LanguageSwitcher />
