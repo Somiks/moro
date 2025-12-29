@@ -36,6 +36,16 @@ const RootLayout: React.FC = () => {
                             </Link>
                         </div>
 
+                        {/* Center: Contact Info (Desktop & Mobile) */}
+                        <div className="flex flex-col items-center text-center px-2 sm:px-4">
+                            <span className="font-bold text-brand tracking-tight">
+                                {t('hero_phone')}
+                            </span>
+                            <span className="text-[10px] md:text-[12px] text-gray-500 font-medium">
+                                {t('hero_address')}
+                            </span>
+                        </div>
+
                         {/* Right: Desktop Nav & Lang */}
                         <div className="hidden md:flex items-center space-x-8">
                             <nav className="flex space-x-6 text-sm font-medium">

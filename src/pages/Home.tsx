@@ -15,20 +15,26 @@ const Home: React.FC = () => {
         <div className="min-h-screen bg-white">
             <SEO titleKey="seo_home_title" descriptionKey="seo_home_description" />
             {/* Hero Section */}
-            <section className="relative h-[35vh] flex items-center justify-center text-white overflow-hidden">
+            <section className="relative flex items-center justify-center text-white overflow-hidden">
                 <img 
                     src={welcome} 
                     alt="Relaxing massage therapy session at Moro" 
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="relative z-10 text-center px-4">
-                    <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-[0.3em] mb-2">
-                        {t('home_welcome')}
-                    </h1>
-                    <p className="text-sm md:text-base font-light tracking-widest uppercase opacity-80">
-                        {t('home_slogan')}
-                    </p>
+                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="relative z-10 w-full flex flex-col justify-center items-center text-center p-4 py-12 md:py-20">
+                    <div className="w-full max-w-4xl flex flex-col items-center">
+                        <h1 className="text-2xl md:text-5xl font-black mb-9 leading-tight drop-shadow-2xl">
+                            {t('hero_title')}
+                        </h1>
+                        <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 opacity-100 drop-shadow-lg">
+                            {t('hero_subtitle')}
+                        </p>
+                        
+                        <p className="text-brand-light brightness-125 text-xs sm:text-sm md:text-base mb-4 font-bold uppercase tracking-widest drop-shadow-md">
+                            {t('hero_insurance')}
+                        </p>
+                    </div>
                 </div>
             </section>
 
